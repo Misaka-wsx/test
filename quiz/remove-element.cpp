@@ -20,10 +20,28 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 */
 #include<vector>
-using namespace 
+#include<iostream>
+using namespace std;
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        
+        int slow=0;
+        for(int fast=0;fast<nums.size();fast++)
+        {
+            if (val!=nums[fast])
+            {
+                nums[slow++]=nums[fast];
+            }
+            
+        }
+        return slow;
     }
 };
+int main()
+{
+    vector<int> v={3,2,2,3};
+    int val=3;
+    Solution a;
+    cout<<a.removeElement(v,val)<<endl;
+    return 0;
+}
