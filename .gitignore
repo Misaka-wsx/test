@@ -331,3 +331,4 @@ ASALocalRun/
 quiz/.vscode/settings.json
 quiz/.vscode/launch.json
 quiz/.vscode/tasks.json
+quiz/.vscode/c_cpp_properties.json
