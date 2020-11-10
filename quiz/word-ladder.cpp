@@ -46,7 +46,7 @@ int ladderLength(string beginWord, string endWord, vector<string>& wordList)
         vector<int> dis(nodeNum,INT_MAX);
         int beginID=wordId[beginWord];
         int endID=wordId[endWord];
-        dis[beginWord]=0;
+        dis[beginID]=0;
         queue<int> que;
         que.push(beginID);
         while (!que.empty())
